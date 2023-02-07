@@ -1,0 +1,103 @@
+.part-four {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.part-four > div {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #a3a3a3;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.part-four > div > p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.part-four > div > .left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.part-four > div > .left > div:nth-child(1) {
+  width: 38%;
+}
+.part-four > div > .left > div:nth-child(1) h1 {
+  font-size: 3.2vw;
+  font-weight: 550;
+  margin-bottom: 40px;
+}
+.part-four > div > .left > div:nth-child(1) p {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.part-four > div > .left > div:nth-child(1) .line-height {
+  line-height: 2.2;
+  margin-bottom: 10px;
+}
+.part-four > div > .left > div:nth-child(1) button {
+  margin-top: 100px;
+  padding: 20px 30px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.part-four > div > .left > div:nth-child(1) button img {
+  width: 12px;
+  height: auto;
+  margin-left: 10px;
+}
+.part-four > div > .left > div:nth-child(2) {
+  position: relative;
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.part-four > div > .left > div:nth-child(2) > img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .part-four > div > p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .part-four > div > .left {
+    flex-direction: column-reverse;
+  }
+  .part-four > div > .left > div {
+    width: 100% !important;
+  }
+  .part-four > div > .left > div:nth-child(1) h1 {
+    font-size: 6vw;
+  }
+  .part-four > div > .left > div:nth-child(1) p {
+    font-size: 3vw;
+  }
+  .part-four > div > .left > div:nth-child(1) button {
+    margin-top: 8vw;
+    font-size: 2.8vw;
+    padding: 3vw 6vw;
+  }
+  .part-four > div > .left > div:nth-child(1) button img {
+    width: 1.6vw;
+  }
+  .part-four > div > .left > div:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=partFour.css.map */

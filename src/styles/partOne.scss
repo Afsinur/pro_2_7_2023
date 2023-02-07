@@ -1,0 +1,133 @@
+.part-one {
+  width: 100%;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+
+  > div {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid #a3a3a3;
+    margin-top: 50px;
+    padding-top: 50px;
+
+    > p {
+      width: 100%;
+      text-align: left;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    > .left {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      padding-bottom: 50px;
+
+      > div:nth-child(1) {
+        width: 38%;
+
+        h1 {
+          font-size: 3.2vw;
+          font-weight: 550;
+          margin-bottom: 40px;
+        }
+
+        p {
+          font-size: 1.2vw;
+          font-weight: 500;
+        }
+
+        .line-height {
+          line-height: 2.2;
+          margin-bottom: 10px;
+        }
+
+        button {
+          margin-top: 100px;
+          padding: 20px 30px;
+          font-size: 1.6rem;
+          font-weight: 600;
+
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+
+          background-color: #000;
+          color: #fff;
+
+          border: none;
+
+          img {
+            width: 12px;
+            height: auto;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      > div:nth-child(2) {
+        position: relative;
+        width: 55%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        > img {
+          position: relative;
+          width: 100%;
+          height: auto;
+
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    > div {
+      > p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      > .left {
+        flex-direction: column-reverse;
+
+        > div {
+          width: 100% !important;
+        }
+
+        > div:nth-child(1) {
+          h1 {
+            font-size: 6vw;
+          }
+
+          p {
+            font-size: 3vw;
+          }
+
+          button {
+            margin-top: 8vw;
+            font-size: 2.8vw;
+            padding: 3vw 6vw;
+
+            img {
+              width: 1.6vw;
+            }
+          }
+        }
+
+        > div:nth-child(2) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

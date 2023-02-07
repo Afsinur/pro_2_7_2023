@@ -1,0 +1,25 @@
+.part-five {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+.part-five > div {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #a3a3a3;
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+}
+.part-five > div > div {
+  width: 50%;
+}
+.part-five > div > div:nth-child(1) {
+  font-size: 1.4rem;
+}
+.part-five > div > div:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 600;
+}/*# sourceMappingURL=partFive.css.map */

@@ -1,0 +1,48 @@
+.part-three {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.part-three > div {
+  width: 92%;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #a3a3a3;
+}
+.part-three > div p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+}
+.part-three > div > div {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.part-three > div > div > div {
+  width: 38%;
+  font-size: 1.8vw;
+}
+.part-three > div > div > div:nth-child(1) {
+  color: #787878;
+}
+.part-three > div > div > div:nth-child(2) {
+  font-weight: 500;
+}
+@media screen and (max-width: 425px) {
+  .part-three > div p {
+    font-size: 1rem;
+  }
+  .part-three > div > div {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .part-three > div > div div {
+    width: 100%;
+    margin-bottom: 8vw;
+    font-size: 3vw;
+  }
+}/*# sourceMappingURL=partThree.css.map */
