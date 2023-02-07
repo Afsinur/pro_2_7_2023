@@ -1,9 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import top_search from "../img/top-search.png";
+import arrow_left from "../img/arrow-left.png";
+import arrow_right from "../img/arrow-right.png";
+import brand_logo from "../img/brand-logo.png";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,110 +17,110 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      <TopSection></TopSection>
+      <JustAbovFooter></JustAbovFooter>
+      <FooterSection></FooterSection>
     </>
-  )
+  );
+}
+
+function TopSection() {
+  return (
+    <div className="top-main-container">
+      <div>
+        <span>
+          <Image src={top_search} alt="image" />
+        </span>
+        <span>
+          Test out the first ever visual search tool for the art industry -&gt;
+        </span>
+      </div>
+
+      <div className="blur-1"></div>
+
+      <div className="waitlist-div">
+        <div>
+          <span className="brand_logo">
+            <Image src={brand_logo} alt="logo" />
+          </span>
+
+          <button>
+            <Image src={arrow_left} alt="arrow" />
+            Join Waitlist
+          </button>
+        </div>
+      </div>
+
+      <div className="blur-2">
+        <div>
+          <h1>Co-Pilot for the Art Industry</h1>
+          <p>
+            Augier Art is building a tool set for galleries and art institutions
+            to automate tedious workflows and unlock business insights using
+            data
+          </p>
+        </div>
+      </div>
+
+      <div className="video">
+        <video src=""></video>
+
+        <button>
+          Learn More
+          <Image src={arrow_right} alt="arrow" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function FooterSection() {
+  return (
+    <div className="footer-section">
+      <div>
+        <Image src={brand_logo} alt="logo" />
+        <p>AI enabling the art market</p>
+        <p>&copy; 2023 Augier Art Inc. All rights reserved.</p>
+      </div>
+
+      <div>
+        <ul>
+          <li>About</li>
+          <li>FAQs</li>
+          <li>Our Tools</li>
+        </ul>
+
+        <ul>
+          <li>Search</li>
+          <li>Gallery Upload</li>
+          <li>Join Waitlist</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function JustAbovFooter() {
+  return (
+    <div className="justAbovFooter">
+      <div className="content">
+        <div></div>
+        <div></div>
+      </div>
+
+      <div className="under-content">
+        <div>
+          <div>
+            <span>Join our Community of Galleries</span>
+            <input type="text" placeholder="Enter your email..." />
+          </div>
+
+          <div>
+            <span>Recommend a feature or tool</span>
+            <input type="text" placeholder="What would like to see next?..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

@@ -1,0 +1,101 @@
+.justAbovFooter {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.justAbovFooter .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.justAbovFooter .content div {
+  width: 50%;
+}
+.justAbovFooter .content > div:nth-child(1) {
+  background-image: url(../img/blur-left.png);
+  height: 299px;
+}
+.justAbovFooter .content > div:nth-child(2) {
+  background-image: url(../img/blur-right.png);
+  height: 299px;
+}
+@media screen and (max-width: 768px) {
+  .justAbovFooter .content {
+    flex-direction: column;
+  }
+  .justAbovFooter .content div {
+    width: 100%;
+  }
+}
+.justAbovFooter .under-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.justAbovFooter .under-content > div {
+  width: 92%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.justAbovFooter .under-content > div div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.justAbovFooter .under-content > div div span {
+  font-size: 2.6vw;
+  font-weight: 600;
+}
+.justAbovFooter .under-content > div div input {
+  width: 35vw;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  padding: 18px 15px;
+  margin-top: 3vw;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.justAbovFooter .under-content > div div ::-moz-placeholder {
+  color: #fff;
+}
+.justAbovFooter .under-content > div div :-ms-input-placeholder {
+  color: #fff;
+}
+.justAbovFooter .under-content > div div ::placeholder {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .justAbovFooter .under-content > div {
+    flex-direction: column;
+  }
+  .justAbovFooter .under-content > div div {
+    justify-content: center;
+    height: 299px;
+    width: 100%;
+  }
+  .justAbovFooter .under-content > div div span {
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+  .justAbovFooter .under-content > div div input {
+    width: 80vw;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    padding: 18px 15px;
+    margin-top: 10vw;
+    font-size: 1rem;
+    color: #fff;
+  }
+}/*# sourceMappingURL=justAbovFooter.css.map */
